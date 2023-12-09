@@ -1,0 +1,180 @@
+body{
+    
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: */
+    background: color #f5f5f7;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    height: 40vh;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 15px;
+}
+
+.auth-input
+{
+    width: 80%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid transparenet;
+    outline: none;
+    border-radius: 5px;
+    background-color:#f5f5f7;
+    font-weight: 600;
+}
+.auth-btn
+{
+   border-radius: 5px;
+   width: 80%;
+   padding: 1rem;
+   border:none;
+   background-color: blueviolet; 
+   color: #fff;
+   font-weight: 600;
+   margin-top: 0.8rem;
+}
+.auth-input:focus{
+    border-bottom: 2px solid blueviolet
+}
+.shadow
+{
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: linear-gradient(to right,rgb(102, 6, 190),#fc466f);
+
+
+
+}
+form{
+    width: 25rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255, 255, 255,.3);
+    border-top: 1px solid rgba(255, 255, 255,.3);
+
+}
+form::before
+{
+    content: '';
+    position: absolute;
+    bottom: 3%;
+    right: 28%;
+    width: 200px;
+    height: 200px;
+    background: magenta;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+
+}
+form::after
+{
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 32%;
+    width: 120px;
+    height: 120px;
+    background: magenta;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+
+}
+h1{
+    font-size: 50px;
+    text-align: cender;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2); 
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    opacity: .7;
+}
+label{
+    font-size: 20px;
+    color: white;
+    margin-left: 10%;
+    opacity: .8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0,.2);
+
+}
+input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid rgba(255,255, 255,0.6);
+    opacity: .8;
+}
+button{
+    width: 50%;
+    margin: 3% auto;
+    color: white;
+    font-size: 15px;
+    opacity: .7;
+    background: rgba(255,255,255,0.06);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+    box-shadow: 3px 3px 5px rgba(31,38,135,.37);
+    border-left: 1px solid rgba(255, 255, 255,.3);
+    border-top: 1px solid rgba(255, 255, 255,.3)
+}
+a{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    opacity: .7;
+} */

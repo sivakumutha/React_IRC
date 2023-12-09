@@ -1,0 +1,199 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+
+}
+.Background
+{
+    min-height: 100vh;
+    background-image: url(C:\Users\sivak\Downloads\kalen-emsley-_LuLiJc1cdo-unsplash.jpg);
+    background-size: 1600px;
+    background-position: 50% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Background h1
+{
+    color: rgb(238, 75, 75);
+    font-size: 50px;
+
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: rgb(78, 216, 229);
+    font-size: 20px;
+    padding: 20px 60px;
+    position: absolute;
+    width: 92%;
+}
+.header nav span{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.header nav span a{
+    text-decoration: none;
+    color: rgb(213, 70, 70);
+    position: relative;
+}
+@keyframes beforeAnimate {
+    0%
+    {
+        width: 0%;
+        transform: translateX(-50%);
+    }
+    100%
+    {
+        width: 100%;
+        transform: translateX(0%);
+    }
+    
+}
+.header nav span a::before
+{
+    content: "";
+    background-color: rgb(157, 249, 244);
+    width: 100%;
+    height: 2.4px;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    display: 0px;
+    display: none;
+    animation: beforeAnimate .5s;
+}
+.header nav span a:hover::before{
+    display:unset;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav#example-6 {
+    background-color: #193549;
+  }
+  
+  nav#example-6 ul {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  nav#example-6 ul li {
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 110px;
+    text-align: center;
+    -webkit-transition: background-color 0.7s ease;
+    transition: background-color 0.7s ease;
+  }
+  
+  nav#example-6 ul li a {
+    text-decoration: none;
+    color: #9EFFFF;
+    -webkit-transition: color 0.9s ease-in-out;
+    transition: color 0.9s ease-in-out;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  nav#example-6 ul li a:hover {
+    color: #FFFFFF;
+    text-shadow: 2px 2px #222222;
+  }
+  
+  nav#example-6 ul li:last-child {
+    border-bottom: none;
+  }
+  
+  nav#example-6 ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #000000;
+  } */
