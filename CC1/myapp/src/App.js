@@ -1,179 +1,200 @@
+import LoginPage from './Components/LoginPage.js';
+// import React from 'react';
+import {Routes,Route} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import Nav from './Components/Nav.js';
+import Form from './Components/Form.js';
+import Prop from './Components/Prop.js';
+import Page from './Components/Page.js';
 
-// // src/App.js
-// import React, { useState } from 'react';
-// import EventList from './EventList';
-// import AddEventForm from './AddEventForm';
-// import './App.css';
-// // import './App.css';
-
-
-// function App() {
-//   const [events, setEvents] = useState([]);
-
-//   const addEvent = (newEvent) => {
-//     setEvents([...events, newEvent]);
-//   };
-
-//   return (
-//     <div className="App">
-//       <h1>Event Management System</h1>
-//       <AddEventForm addEvent={addEvent} />
-//       <EventList events={events} />
-//     </div>
-//   );
-// }
-  
-// export default App;
-
-//  import './Assets/CSS/App.css';
-
-// function App() {
-//   return (
-
-//     <>
-    
-// <section id="gallery">
-//   <div class="container">
-
-    /* <!-- Filterable Gallery --> */
-//     <ul class="gallery_tabs">
-//       <li class="active" data-filter="all">All</li>
-//       <li data-filter="camera">birthday party</li>
-//       <li data-filter="laptop">DJ</li>
-//       <li data-filter="mobile">Wedding</li>
-//       <li data-filter="headphone">Meeting Hall</li>
-//     </ul>
-
-//     <div class="gallery_wrapper">
-//       <div class="gallery_item camera">
-//         <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGV2ZW50JTIwcGxhbm5pbmd8ZW58MHx8MHx8fDA%3D" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item headphone">
-//         <img src="https://media.istockphoto.com/id/1399901638/photo/co-workers-make-flower-arrangements-for-the-party.webp?b=1&s=170667a&w=0&k=20&c=bTrPLTXKU2Bvx6t4-OhCrX3czq7jjMpNxQ8d_TytB8E=" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item laptop">
-//         <img src="https://images.unsplash.com/photo-1513278974582-3e1b4a4fa21e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item mobile">
-//         <img src="https://images.unsplash.com/photo-1558008258-3256797b43f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGV2ZW50JTIwcGxhbm5pbmd8ZW58MHx8MHx8fDA%3D" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item laptop">
-//         <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGV2ZW50JTIwcGxhbm5pbmd8ZW58MHx8MHx8fDA%3D" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item camera">
-//         <img src="https://images.unsplash.com/photo-1561489396-888724a1543d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGV2ZW50JTIwcGxhbm5pbmd8ZW58MHx8MHx8fDA%3D" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item headphone">
-//         <img src="https://media.istockphoto.com/id/1399901117/photo/co-workers-make-the-party-buffet.webp?b=1&s=170667a&w=0&k=20&c=P_k4ZgJmT9rv7eniS6-tNsQoIIimOoBDAwH16GwbsNY=" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item mobile">
-//         <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGV2ZW50JTIwcGxhbm5pbmd8ZW58MHx8MHx8fDA%3D" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item laptop">
-//         <img src="https://images.unsplash.com/photo-1609103254482-dc7beedc47bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGV2ZW50JTIwcGxhbm5pbmd8ZW58MHx8MHx8fDA%3D" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item headphone">
-//         <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGV2ZW50JTIwcGxhbm5pbmd8ZW58MHx8MHx8fDA%3D" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item mobile">
-//         <img src="https://media.istockphoto.com/id/1380516073/photo/female-party-planner-arranging-decorations-for-a-child-birthday-party.webp?b=1&s=170667a&w=0&k=20&c=VZDqiwzsHjP1NXqDB6D3xVsvhrNgEvd6xTmp-VimFGc=" alt="img"></img>
-//       </div>
-
-//       <div class="gallery_item camera">
-//         <img src="https://images.unsplash.com/photo-1518890569493-668df9a00266?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGV2ZW50JTIwcGxhbm5pbmd8ZW58MHx8MHx8fDA%3D" alt="img"></img>
-//       </div>
-//     </div>
-
-//     {/* <!-- Lightbox --> */}
-//     <div class="lightbox">
-//       <div class="lightbox_wrapper">
-//         <div class="lightbox_content">
-//           <img src="" class="lightbox_img" alt="lightbox-img"></img>
-//         </div>
-//       </div>
-//       <div class="lightbox_close">
-//         <span></span>
-//         <span></span>
-//       </div>
-//     </div>
-//   </div>
-// </section>
-
-//     </>
-//   )
-// }
-// export default App;
+  import './Assets/CSS/page.css';
+  import './Assets/CSS/login.css';
+  import './Assets/CSS/form.css';
+  import './Assets/CSS/nav.css';
 
 
-import './Assets/CSS/App.css';
-// import login from "./Pages/login"
-// import {Routes, Routers} from "react-router-dom"
-function App() {
+  function App() {
     return (
-        <>
-<div>
+      
+      <>
 
-<body>
-  <div class="container">
-    <nav class="nav">
-      <ul>
-        <li><a href="#" class="logo">
-          <img src="./pic/logo.jpg"/>
-          <span class="nav-item">Admin</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-menorah"></i>
-          <span class="nav-item">Dashboard</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-comment"></i>
-          <span class="nav-item">Message</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-database"></i>
-          <span class="nav-item">Report</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-chart-bar"></i>
-          <span class="nav-item">Attendance</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-cog"></i>
-          <span class="nav-item">Setting</span>
-        </a></li>
-        <li><a href="#" class="logout">
-          <i class="fas fa-sign-out-alt"></i>
-          <span class="nav-item">Log out</span>
-        </a></li>
+      <Routes>
+        <Route path = '/' element = {<Prop/>}/>
+        <Route path = '/log' element = {<LoginPage/>}/>
+        <Route path = '/pr' element = {<Page/>}/>
+        <Route path = '/Reg' element = {<Form/>}/>
+      </Routes>
+              {/* <Link to = '/log'><button>Login</button></Link> */}
+    
+
+      {/* <div className="App">
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top"> */}
+          {/* <div className="container">
+            <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul className="navbar-nav ml-auto" id = "nav"> */}
+                {/* <li className="nav-item"><Link className="nav-link" to={'/login'}><b>Login</b></Link></li> */}
+                {/* <li className="nav-item"><Link className="nav-link" to={'/Prop'}><b>Prop</b></Link></li>
+                <li className="nav-item"><Link className="nav-link" to={'/Form'}><b>Register</b></Link></li> */}
+                {/* <li className="nav-item"><Link className="nav-link" to={'/Home'}><b>Home</b></Link></li> */}
+              {/* </ul> */}
+
+
+
+
+
+
+{/* 
+            </div>
+          </div>
+        </nav> */}
+        {/* <div className="auth-wrapper">
+          <div className="auth-inner"> */}
+            <Routes>
+              <Route exact path="/" element={<Nav />} />
+              {/* <Route path="/Home" element={<Home />} /> */}
+              {/* <Route path="/Login" element={<Login/>} /> */}
+              <Route path="/Prop" element={<Prop/>} />
+              <Route path="/Form" element={<Form/>} />
+            </Routes>
+          {/* </div>
+        </div>
+      </div> */}
+  
+    </>
+    )
+  }
+  export default App;
+      {/* <div className='main'>
+        <img src={Img1} />  */}
+        
+        {/* <Nav/> */}
+        {/* <Login/>  */}
+
+      {/* <p>Discover Most Suitable Property</p>
+      <p>Most Suitable</p>
+    <p>Property</p> */}
+
+      {/* <img src="https://images.template.net/wp-content/uploads/2018/06/Interior-Design-Feat.png"></img> */}
+      {/* <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*BOZaN3l0SjrKfgBpA74gHA.jpeg"></img> */}
+      {/* <img src="https://content.jdmagicbox.com/comp/mayurbhanj/t7/9999p6794.6794.200918210015.y5t7/catalogue/abhija-creative-studio-baripada-mayurbhanj-interior-decorators-for-office-3tc90wf00e.jpg?clr="></img> */}
+
+      {/* <header>
+  <nav>
+  <ul>
+  <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#press">Press</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#Contact">Contact</a></li>
       </ul>
-    </nav>
-    
-    <ul class="navbar">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">Login</a></li>
-    <li><a href="#about">Register</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-    </ul>
+      </nav>
+      </header>
+      
+      <section id="portfolio">
+      <h2 data-animate="true" >Portfolio</h2>
+      </section>
+      
+      <section id="press">
+      <h2 data-animate="true">Press</h2>
+      </section>
+      
+      <section id="shop">
+      <h2 data-animate="true">Shop</h2>
+      </section>
+      
+      <section id="about">
+      <h2 data-animate="true">About</h2>
+    </section> */}
 
+{/* <div id="cursor" class="cursor">
+  <div class="ring">
+  <div>Border</div>
   </div>
-</body>
+  <div class="ring">
+  <div>Pointer</div>   
+  </div>
+</div> */}
+{/*         
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Real Estate Website</title>
+        </head>
+      <body> */}
 
-</div>
-         
-   
-   </>  
+  {/* <header>
+    <h1>Real Estate Listings</h1>
+  </header> */}
+  
+  {/* <section class="property-listing">
+    <img src="https://homebazaar-blog.s3.ap-south-1.amazonaws.com/knowledge/wp-content/uploads/2022/12/29084231/FeatureImage_House-Front-Design-Indian-Style-2023.jpg" alt="House 1"></img>
+    <h2>Beautiful Home</h2>
+    <p>3 bedrooms, 2 bathrooms</p>
+    <p>$300,000</p>
+    </section>
     
-    );
-}
-export default App;
+    <section class="property-listing">
+    <img src="https://st.hzcdn.com/simgs/pictures/exteriors/modern-architecture-estate-erinn-v-design-group-img~39b15bbc0547e5ac_14-9081-1-88d65c5.jpg" alt="House 2"></img>
+    <h2>Modern Apartment</h2>
+    <p>2 bedrooms, 1 bathroom</p>
+    <p>$200,000</p>
+  </section> */}
+
+  {/* <img src="https://images.template.net/wp-content/uploads/2018/06/Interior-Design-Feat.png"></img> */}
+  {/* <!-- Add more property listings as needed --> */}
+{/* 
+  <footer>
+  <p>&copy; 2023 Real Estate Website</p>
+</footer> */}
+{/* </body>
+</html> */}
+
+
+
+        {/* <!-- <div style="background-color: black;"> --> */}
+            {/* <form class="container shadow" onclick="register()">
+                <input type="text"name="" id="" placeholder="Username" class="auth-input"></input>
+                <input type="password" name="" id="" placeholder="Password" class="auth-input"></input>
+                <input type="email" name="" id="" placeholder="Email" class="auth-input"></input>
+                <input type="number" name="" id="" placeholder="Phone" class="auth-input"></input>
+                <input type="submit" value="Register" id="" placeholder="SUBMIT" class="auth-btn"></input> */}
+            {/* <!-- </div> --> */}
+        {/* </form> */}
+
+    
+            {/* <button onclick="show()"> show user</button> */}
+  
+
+{/* 
+ <article class="gallery">
+  <img src="https://images.unsplash.com/photo-1568856761019-bc47cb59d8bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="guitar player at concert" />
+  <blockquote class="quote spacer">
+    <span>"The entertainment provided by The Little Big Event Company was astounding
+      
+      Incredibly happy!"</span>
+    <cite>&mdash;</cite>
+  </blockquote>
+  <img src="https://images.unsplash.com/photo-1482575832494-771f74bf6857?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY2fHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="duo singing" />
+  <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc1fHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="crowd cheering" />
+  <img src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkxfHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="singer performing" />
+  <img src="https://media.istockphoto.com/id/1346492551/photo/empty-stage-design-for-mockup-and-corporate-identity-display-platform-elements-in-hall-blank.jpg?s=2048x2048&w=is&k=20&c=CKbbY20xC8rJAM_KX9HhyklusfhvhzFvE0BsX4ptM2A=" alt="crowd cheering" />
+  <div class="spacer"></div>
+  <img src="https://images.unsplash.com/photo-1521048525864-2130780a12a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjEwfHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="singer fistbumping crowd" />
+  <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjM4fHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="crowd in a concert" />
+  <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjYyfHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="woman singing" />
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <img src="https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjc5fHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="Person playing a cello" />
+  <img src="https://images.unsplash.com/photo-1651313947982-59d4049e5834?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzA2fHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="Kiss playing" />
+  <img src="https://images.unsplash.com/photo-1640103856233-833930665307?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjkxfHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="young man singing" />
+  <div class="spacer"></div>
+  <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxvZjZlZUtoOWdjRXx8ZW58MHx8fHx8" alt="woman singing" />
+  <img src="https://images.unsplash.com/photo-1600270187091-936d919ca646?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHw4NDM3MTExfHxlbnwwfHx8fHw%3D" alt="man playing drums" /> */}
+  {/* <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzU2fHxldmVudCUyMHBsYW5uaW5nfGVufDB8fDB8fHww" alt="man playing drums" /> */}
+{/* </article>  */}
+
+      
+    
+    
