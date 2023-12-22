@@ -1,0 +1,19 @@
+{
+    "users":[
+        {
+            "id":1,
+            "username":"kumutha R",
+            "password":"1234"
+        },
+        {
+            "id":2,
+            "username":"kumutha R",
+            "password":"1234"
+        }
+    ],
+    "products":[
+        {
+            
+        }
+    ]
+}
